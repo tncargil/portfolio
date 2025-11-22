@@ -37,3 +37,16 @@ body {
         animation: loading 0.8s ease infinite;
     }
 }
+
+.reveal {
+    opacity: 0;
+    transform: translate(20px);
+    transform:
+        opacity 0.7s ease,
+        transform 0.7s ease;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}

@@ -16,7 +16,10 @@ export const About = () => {
                     About Me
                 </h2>
                 <div className="rounded-xl p-8 border-white/10 border hover:-translate-y-1 transition-all">
-                    <p className="text-gray-300 mb-6">Passionate developer</p>
+                    <p className="text-gray-300 mb-6">
+                        Passionate developer with 7+ years of professional
+                        experience in programming and software engineering.
+                    </p>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
                             <h3 className="text-xl font-bold mb-4">Frontend</h3>
@@ -66,7 +69,8 @@ hover:shadow-[0_2px_8px_rgba(59,130,2246,0.2)] transition"
                         </h3>
                         <div>
                             <h4 className="">
-                                Software Engineer at Vive Financial LLC
+                                Software Engineer at Vive Financial LLC, J.B.
+                                Hunt, SalesTax Data Link, Verint Systems Inc.
                             </h4>
                         </div>
                     </div>

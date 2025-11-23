@@ -1,3 +1,6 @@
+import { ImageSlideShow } from "../ImageSlideShow.jsx";
+import typescriptImage from "../../assets/20230517_092752.jpg";
+import javascriptBookImage from "../../assets/20230612_154853.jpg";
 export const Projects = () => {
     return (
         <section
@@ -59,7 +62,10 @@ export const Projects = () => {
                             ))}
                         </div>
                         <div>
-                            <a></a>
+                            <ImageSlideShow
+                                folderName="prism"
+                                interval={4000}
+                            />
                         </div>
                     </div>
                 </div>

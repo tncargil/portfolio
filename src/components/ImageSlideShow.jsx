@@ -1,23 +1,20 @@
 import React, { useState, useEffect } from "react";
-import { LoadImages } from "./LoadImages";
+import { useLoadImages } from "./LoadImages";
 
 export const ImageSlideShow = ({ folderName, interval }) => {
-    const [images, setImages] = useState([]);
+    const images = useLoadImages(folderName);
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const goToNextPicture = () => {
         setCurrentIndex((prevIndex) => {
             const isLastSlide = prevIndex === images.length - 1;
             console.log(images.length);
+            
+console.log("All images keys:", Object.keys(images));
+            console.log("folder path: " +images);
             return isLastSlide ? 0 : prevIndex + 1;
         });
     };
-
-    useEffect(() => {
-        const loadedUrls = LoadImages(folderName);
-        setImages(loadedUrls);
-        setCurrentIndex(0);
-    }, [folderName]);
 
     useEffect(() => {
         if (images.length === 0) return;
@@ -25,7 +22,7 @@ export const ImageSlideShow = ({ folderName, interval }) => {
         return () => {
             clearInterval(timer);
         };
-    }, [interval]);
+    }, [interval, images]);
 
     return (
         <div>

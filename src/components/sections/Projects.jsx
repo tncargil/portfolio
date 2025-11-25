@@ -1,6 +1,4 @@
 import { ImageSlideShow } from "../ImageSlideShow.jsx";
-import typescriptImage from "../../assets/20230517_092752.jpg";
-import javascriptBookImage from "../../assets/20230612_154853.jpg";
 export const Projects = () => {
     return (
         <section
@@ -35,7 +33,10 @@ export const Projects = () => {
                             ))}
                         </div>
                         <div>
-                            <a></a>
+                            <ImageSlideShow
+                                folderName="stenograph"
+                                interval={4000}
+                            />
                         </div>
                     </div>
                     <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition">

@@ -9,9 +9,7 @@ export function useLoadImages(folderName) {
     console.log(Object.keys(allImages));
     return useMemo(() => {
         return Object.entries(allImages)
-            .filter(([path]) => path.includes(`/src/assets/${folderName}/`))
-            .map(([path]) => {
-                return `${base}${path.replace(/^\//, "")}`;
-            });
+            .filter(([path]) => path.includes(`/assets/${folderName}/`))
+            .map(([__, mod]) => mod);
     }, [folderName, base]);
 }

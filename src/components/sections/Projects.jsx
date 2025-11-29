@@ -32,7 +32,7 @@ export const Projects = () => {
                                 </span>
                             ))}
                         </div>
-                        <div>
+                        <div className="p-4">
                             <ImageSlideShow
                                 folderName="stenograph"
                                 interval={4000}
@@ -62,7 +62,7 @@ export const Projects = () => {
                                 </span>
                             ))}
                         </div>
-                        <div>
+                        <div className="p-4">
                             <ImageSlideShow
                                 folderName="prism"
                                 interval={4000}

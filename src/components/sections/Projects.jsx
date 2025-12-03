@@ -12,10 +12,10 @@ export const Projects = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition">
                         <h3 className="text-xl font-bold mb-2">
-                            Hand Build Stenograph
+                            Hand Built Stenograph
                         </h3>
                         <p className="text-gray-400 mb-4">
-                            Build Custom Stenograph keyboard corne(based) for
+                            Built Custom Stenograph keyboard corne(based) for
                             use in typing, transcription, and coding.
                         </p>
                         <div>
@@ -44,7 +44,7 @@ export const Projects = () => {
                             Prism Controller
                         </h3>
                         <p className="text-gray-400 mb-4">
-                            Custom build prism controller with added
+                            Custom built prism controller with added
                             modifiers/angles for use in playing platformer
                             fighting games
                         </p>

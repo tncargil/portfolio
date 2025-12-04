@@ -5,10 +5,8 @@ export const Home = () => {
     const [displayedText, setDisplayedText] = useState('');
     const [index, setIndex] = useState(0);
     
-    // 1. New state to control the fade-in of the second line
     const [isTypingComplete, setIsTypingComplete] = useState(false); 
 
-    // useEffect to handle the typing animation
     useEffect(() => {
         if (index < fullText.length) {
             const timeoutId = setTimeout(() => {
@@ -18,7 +16,6 @@ export const Home = () => {
 
             return () => clearTimeout(timeoutId);
         } else {
-            // 2. Set the flag to true once the typing is finished
             setIsTypingComplete(true);
         }
     }, [index, fullText]); 
@@ -33,7 +30,6 @@ export const Home = () => {
                     {displayedText}
                 </h1>
 
-                {/* 3. Apply fade-in classes based on the state */}
                 <p 
                     className={`
                         text-gray-400 text-lg mb-8 max-w-lg mx-auto 

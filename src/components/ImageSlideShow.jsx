@@ -8,9 +8,7 @@ export const ImageSlideShow = ({ folderName, interval }) => {
     const goToNextPicture = () => {
         setCurrentIndex((prevIndex) => {
             const isLastSlide = prevIndex === images.length - 1;
-            console.log(images.length);
             
-console.log("All images keys:", Object.keys(images));
             return isLastSlide ? 0 : prevIndex + 1;
         });
     };

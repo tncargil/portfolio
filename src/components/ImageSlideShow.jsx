@@ -11,7 +11,6 @@ export const ImageSlideShow = ({ folderName, interval }) => {
             console.log(images.length);
             
 console.log("All images keys:", Object.keys(images));
-            console.log("folder path: " +images);
             return isLastSlide ? 0 : prevIndex + 1;
         });
     };
